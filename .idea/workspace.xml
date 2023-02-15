@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb108de8-9a9d-453e-8c4c-86aa24a0e7fc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/forward_IT_BlocksWorld_Forward_IT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/forward_IT_BlocksWorld_Forward_IT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylogger.log" beforeDir="false" afterPath="$PROJECT_DIR$/mylogger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aStar_planning/pop/PopPlanningProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aStar_planning/pop/PopPlanningProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/aStar_planning/pop/components/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aStar_planning/pop/components/Plan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +27,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../../../Program Files/Java/jdk-17.0.2/lib/src.zip!/java.base/java/lang/String.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../../Program Files/Java/jdk-17.0.2/lib/src.zip!/java.base/java/lang/StringLatin1.java" root0="SKIP_INSPECTION" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -48,7 +44,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/IRIELA/Desktop/HEI__Exams/ExamenFinal_PROG2/Judicael/pharmacy-management-api&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/ylan/Project/mimosa-iriela-extension&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -65,47 +61,22 @@
       <recent name="logic" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BlocksWorld_Pop_IT.shouldStackThreeConcreteBlocks_finalOutputTest">
-    <configuration name="BlocksWorld_Forward_IT" type="JUnit" factoryName="JUnit" activateToolWindowBeforeRun="false" temporary="true" nameIsGenerated="true">
-      <module name="Iriela" />
+  <component name="RunManager" selected="Application.Plan">
+    <configuration name="Plan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aStar_planning.pop.components.Plan" />
+      <module name="mimosa-iriela-extension" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mini_mirana_IT.*" />
-          <option name="ENABLED" value="true" />
-          <option name="INCLUDE" value="false" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="forward_IT.*" />
+          <option name="PATTERN" value="aStar_planning.pop.components.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="forward_IT" />
-      <option name="MAIN_CLASS_NAME" value="forward_IT.BlocksWorld_Forward_IT" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2" />
-    </configuration>
-    <configuration name="BlocksWorld_Forward_IT.shouldReturnEmptyPlan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Iriela" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="forward_IT.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="forward_IT" />
-      <option name="MAIN_CLASS_NAME" value="forward_IT.BlocksWorld_Forward_IT" />
-      <option name="METHOD_NAME" value="shouldReturnEmptyPlan" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlocksWorld_Pop_IT.shouldStackThreeConcreteBlocks_finalOutputTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Iriela" />
+    <configuration name="BlocksWorld_Pop_IT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mimosa-iriela-extension" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pop_IT.*" />
@@ -114,14 +85,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="pop_IT" />
       <option name="MAIN_CLASS_NAME" value="pop_IT.BlocksWorld_Pop_IT" />
-      <option name="METHOD_NAME" value="shouldStackThreeConcreteBlocks_finalOutputTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="BlocksWorld_Pop_UT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Iriela" />
+      <module name="mimosa-iriela-extension" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pop_IT.*" />
@@ -135,37 +105,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlocksWorld_Pop_UT.shouldDetect__threeTakes_asOptionsWhen_onTable_ABC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Iriela" />
+    <configuration name="Graph_Forward_IT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mimosa-iriela-extension" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pop_IT.*" />
+          <option name="PATTERN" value="forward_IT.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pop_IT" />
-      <option name="MAIN_CLASS_NAME" value="pop_IT.BlocksWorld_Pop_UT" />
-      <option name="METHOD_NAME" value="shouldDetect__threeTakes_asOptionsWhen_onTable_ABC" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="forward_IT" />
+      <option name="MAIN_CLASS_NAME" value="forward_IT.Graph_Forward_IT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mirana_IT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mimosa-iriela-extension" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mini_mirana_IT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mini_mirana_IT" />
+      <option name="MAIN_CLASS_NAME" value="mini_mirana_IT.Mirana_IT" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.forward_IT.BlocksWorld_Forward_IT" />
-      <item itemvalue="JUnit.BlocksWorld_Pop_IT.shouldStackThreeConcreteBlocks_finalOutputTest" />
-      <item itemvalue="JUnit.BlocksWorld_Pop_UT.shouldDetect__threeTakes_asOptionsWhen_onTable_ABC" />
+      <item itemvalue="Application.Plan" />
+      <item itemvalue="JUnit.BlocksWorld_Pop_IT" />
+      <item itemvalue="JUnit.Graph_Forward_IT" />
+      <item itemvalue="JUnit.Mirana_IT" />
       <item itemvalue="JUnit.BlocksWorld_Pop_UT" />
-      <item itemvalue="JUnit.BlocksWorld_Forward_IT" />
-      <item itemvalue="JUnit.BlocksWorld_Forward_IT.shouldReturnEmptyPlan" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BlocksWorld_Pop_IT.shouldStackThreeConcreteBlocks_finalOutputTest" />
+        <item itemvalue="Application.Plan" />
+        <item itemvalue="JUnit.BlocksWorld_Pop_IT" />
         <item itemvalue="JUnit.BlocksWorld_Pop_UT" />
-        <item itemvalue="JUnit.BlocksWorld_Forward_IT" />
-        <item itemvalue="JUnit.BlocksWorld_Pop_UT.shouldDetect__threeTakes_asOptionsWhen_onTable_ABC" />
-        <item itemvalue="JUnit.BlocksWorld_Forward_IT.shouldReturnEmptyPlan" />
+        <item itemvalue="JUnit.Mirana_IT" />
+        <item itemvalue="JUnit.Graph_Forward_IT" />
       </list>
     </recent_temporary>
   </component>
@@ -329,6 +313,16 @@
       <workItem from="1675142051452" duration="8916000" />
       <workItem from="1675167653602" duration="63000" />
       <workItem from="1675269309385" duration="13413000" />
+      <workItem from="1675752556331" duration="883000" />
+      <workItem from="1675833639095" duration="6000" />
+      <workItem from="1675838422209" duration="49000" />
+      <workItem from="1675935918634" duration="119000" />
+      <workItem from="1675936127506" duration="602000" />
+      <workItem from="1675937075298" duration="774000" />
+      <workItem from="1675943081081" duration="1714000" />
+      <workItem from="1675949442453" duration="1512000" />
+      <workItem from="1676094467798" duration="3873000" />
+      <workItem from="1676455679501" duration="2420000" />
     </task>
     <servers />
   </component>

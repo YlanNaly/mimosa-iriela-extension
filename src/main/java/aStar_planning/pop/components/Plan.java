@@ -4,6 +4,7 @@ import aStar.Operator;
 import aStar.State;
 import aStar_planning.pop.utils.OpenConditionResolver;
 import aStar_planning.pop.utils.ThreatResolver;
+import constraints.Codenotation;
 import constraints.PartialOrder;
 import constraints.TemporalConstraints;
 import logic.Action;
@@ -11,14 +12,20 @@ import logic.Atom;
 import constraints.CodenotationConstraints;
 import logic.Context;
 import logic.ContextualAtom;
+import logic.LogicalInstance;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
@@ -36,6 +43,7 @@ import java.util.stream.Collectors;
  */
 @Getter
 @EqualsAndHashCode
+@Slf4j
 public class Plan implements State {
     private List<PopSituation> situations;
     private List<Step> steps;
@@ -326,16 +334,32 @@ public class Plan implements State {
      * and its bindings
      * @return a sequence of action instance for the agent to execute.
      */
-    public List<Operator> createInstance() {
-        List<Operator> planActions = new ArrayList<>();
+    public List<LogicalInstance> createInstance() {
 
-        this.steps.forEach(step -> {
-            this.place(step, planActions);
-        });
-
-        return planActions;
+      List<LogicalInstance> planActions = new ArrayList<>();
+      List<Step> allSteps = new ArrayList<>();
+      List<CodenotationConstraints>  cc = Collections.singletonList(this.cc);
+      allSteps.add(this.getInitialStep());
+      allSteps.sort(new Comparator<Step>() {
+        @Override
+        public int compare(Step o1, Step o2) {
+          return extractInt(String.valueOf(o1)) - extractInt(String.valueOf(o2));
+        }
+        int extractInt(String s) {
+          String num = s.replaceAll("\\D", "");
+          return num.isEmpty() ? 0 : Integer.parseInt(num);
+        }
+      });
+        allSteps.add(this.steps.stream().filter(Step::isTheFinalStep).toList().get(0));
+     /* cc.sort(new Comparator<CodenotationConstraints>() {
+        @Override
+        public int compare(CodenotationConstraints o1, CodenotationConstraints o2) {
+          return ;
+        }
+      });
+    */
+      return planActions;
     }
-
     /**
      * TODO : places the step into the set of actions with total order.
      * @param toPlace the step we want to place into the plan
